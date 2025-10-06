@@ -8,6 +8,17 @@ export default function socialMedia() {
   }
   return (
     <div className="social-media-div">
+      {socialMediaLinks.whatsapp ? (
+        <a
+          href={socialMediaLinks.whatsapp}
+          className="icon-button whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-whatsapp"></i>
+          <span></span>
+        </a>
+      ) : null}
       {socialMediaLinks.github ? (
         <a
           href={socialMediaLinks.github}
